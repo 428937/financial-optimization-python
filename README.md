@@ -109,22 +109,25 @@ python basic_portfolio_optimization.py
 ## Example Output
 
 ```text
-Data loaded successfully. Shape: (XXXX, 4)
+Data loaded successfully. Shape: (1624, 4)
 
 Predicted Expected Returns:
-AAPL: 0.0012
-MSFT: 0.0009
-GOOGL: 0.0015
-AMZN: 0.0008
+AAPL: 0.0007
+AMZN: -0.0003
+GOOGL: 0.0007
+MSFT: 0.0006
 
 Optimal Portfolio Weights:
-AAPL: 0.3521 (35.2%)
-MSFT: 0.1843 (18.4%)
-GOOGL: 0.2987 (29.9%)
-AMZN: 0.1649 (16.5%)
+AAPL: 0.3253 (32.5%)
+MSFT: 0.0000 (0.0%)
+GOOGL: 0.3127 (31.3%)
+AMZN: 0.3621 (36.2%)
 ```
 
 *(A pie chart window will also pop up)*
+
+<img width="1266" height="1102" alt="image" src="https://github.com/user-attachments/assets/4dc8ef75-3632-4b5f-b266-2e0eab59f779" />
+
 
 ---
 
