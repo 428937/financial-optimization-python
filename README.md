@@ -41,7 +41,7 @@ financial-optimization-python/
 
 ---
 
-## 🛠 Installation
+## Installation
 
 ### 1. Clone or Download the Repository
 
@@ -83,7 +83,7 @@ python basic_portfolio_optimization.py
 
 ---
 
-## How It Works (Step-by-Step)
+## How It Works
 
 ### 1. Data Loading (`data_loader.py`)
 - Downloads adjusted close prices for chosen stocks using `yfinance`
@@ -160,7 +160,3 @@ This project was built with **clarity and modularity** in mind:
 - Minimal comments inside code (explanations are in README and file structure)
 - Easy to read and modify
 - Strong emphasis on **Linear Regression** as requested
-
-## 📄 License
-
-This project is licensed under the **MIT License** — feel free to use it for learning or commercial purposes.
