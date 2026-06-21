@@ -6,6 +6,9 @@ class PortfolioOptimizer:
         expected_returns = np.array(list(expected_returns.values())) if isinstance(expected_returns, dict) else np.array(expected_returns)
         cov_matrix = np.array(cov_matrix)
         
+        expected_returns = expected_returns * 252
+        cov_matrix = cov_matrix * 252
+        
         def objective(weights):
             port_return = np.dot(weights, expected_returns)
             port_variance = np.dot(weights.T, np.dot(cov_matrix, weights))
@@ -16,7 +19,14 @@ class PortfolioOptimizer:
         constraints = {'type': 'eq', 'fun': lambda w: np.sum(w) - 1.0}
         initial = np.array([1.0 / n] * n)
 
-        result = minimize(objective, initial, bounds=bounds, constraints=constraints, method='SLSQP')
+        result = minimize(
+            objective, 
+            initial, 
+            bounds=bounds, 
+            constraints=constraints, 
+            method='SLSQP',
+            options={'ftol': 1e-9}
+        )
         
         if result.success:
             return result.x
