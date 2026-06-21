@@ -7,14 +7,13 @@ class LinearReturnModel:
         self.models = {}
 
     def train(self, returns_data):
-        """Train a Linear Regression model for each asset using lagged returns."""
         for asset in returns_data.columns:
             df = returns_data[[asset]].copy()
             df['lag1'] = df[asset].shift(1)
             df = df.dropna()
             
-            X = df[['lag1']]
-            y = df[asset]
+            X = df[['lag1']].values
+            y = df[asset].values
             
             if len(X) < 10:
                 continue
@@ -26,7 +25,6 @@ class LinearReturnModel:
             self.models[asset] = model
 
     def predict_returns(self, returns_data):
-        """Predict next period return for each asset."""
         predictions = {}
         for asset, model in self.models.items():
             if asset in returns_data.columns:
