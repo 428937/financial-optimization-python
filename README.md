@@ -150,12 +150,3 @@ or
 python -m unittest tests/test_data_loader.py
 ```
 
----
-
-## Project Philosophy
-
-This project was built with **clarity and modularity** in mind:
-- Short, focused modules
-- Minimal comments inside code (explanations are in README and file structure)
-- Easy to read and modify
-- Strong emphasis on **Linear Regression** as requested
