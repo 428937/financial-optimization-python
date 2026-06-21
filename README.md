@@ -46,7 +46,7 @@ financial-optimization-python/
 ### 1. Clone or Download the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/financial-optimization-python.git
+git clone https://github.com/428937/financial-optimization-python.git
 cd financial-optimization-python
 ```
 
