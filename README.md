@@ -1,7 +1,6 @@
 # Financial Optimization with Python
 
-A modular Python project for **financial portfolio optimization** using real stock data from **yfinance**. 
-
+A Python project for **financial portfolio optimization** using real stock data from **yfinance**. 
 The project focuses heavily on **Linear Regression** to predict expected returns for each asset, which are then used in a **Mean-Variance Optimization** (Markowitz-style) to find the best portfolio allocation.
 
 Perfect for learning how to combine machine learning (Linear Regression) with financial optimization in a clean, understandable way.
