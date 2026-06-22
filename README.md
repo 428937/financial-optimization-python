@@ -7,7 +7,7 @@ Perfect for learning how to combine machine learning (Linear Regression) with fi
 
 ---
 
-### Features
+## Features
 
 - **Real-time data**: Downloads historical stock prices using `yfinance`
 - **Linear Regression Models**: Trains one model per stock using lagged returns as features
