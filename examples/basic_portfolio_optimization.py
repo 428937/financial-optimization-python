@@ -8,7 +8,7 @@ from financial_optimization.models import LinearReturnModel
 from financial_optimization.optimizer import PortfolioOptimizer
 from financial_optimization.utils import plot_portfolio_allocation
 
-# Step 1: Define stockss
+# Step 1: Define stocks
 tickers = ["AAPL", "MSFT", "GOOGL", "AMZN"]
 
 # Step 2: Load data using yfinance
