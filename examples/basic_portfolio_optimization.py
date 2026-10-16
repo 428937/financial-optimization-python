@@ -9,7 +9,7 @@ from financial_optimization.optimizer import PortfolioOptimizer
 from financial_optimization.utils import plot_portfolio_allocation
 
 # Step 1: Define stocks
-tickers = ["AAPL", "MSFT", "GOOGL", "AMZN"]
+tickers = ["MU", "BE", "MRNA", "TSLA"]
 
 # Step 2: Load data using yfinance
 loader = DataLoader()
