@@ -86,7 +86,7 @@ python basic_portfolio_optimization.py
 
 ### 1. Data Loading (`data_loader.py`)
 - Downloads adjusted close prices for chosen stocks using `yfinance`
-- Example tickers: AAPL, MSFT, GOOGL, AMZN
+- Example tickers: MU, BE, MRNA, TSLA
 
 ### 2. Feature Engineering & Linear Regression (`models.py`)
 - Computes daily returns
@@ -109,22 +109,24 @@ python basic_portfolio_optimization.py
 ## Example Output
 
 ```text
-Data loaded successfully. Shape: (1624, 4)
+Data loaded successfully. Shape: (1706, 4)
 
 Predicted Expected Returns:
-AAPL: 0.0012
-MSFT: 0.0009
-GOOGL: 0.0015
-AMZN: 0.0008
+BE: 0.0037
+MRNA: 0.0004
+MU: 0.0007
+TSLA: 0.0022
 
 Optimal Portfolio Weights:
-AAPL: 0.3521 (35.2%)
-MSFT: 0.1843 (18.4%)
-GOOGL: 0.2987 (29.9%)
-AMZN: 0.1649 (16.5%)
+MU: 0.2140 (21.4%)
+BE: 0.0778 (7.8%)
+MRNA: 0.2445 (24.5%)
+TSLA: 0.4636 (46.4%)
 ```
+<img width="2096" height="1542" alt="image" src="https://github.com/user-attachments/assets/81f9b294-ac03-4a86-9ace-fa91e6b8baf4" />
 
-*(A pie chart window will also pop up)*
+
+*(This pie chart window will also pop up)*
 
 ---
 
